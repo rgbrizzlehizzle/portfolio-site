@@ -6,7 +6,7 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [`gatsby-plugin-typescript`],
   siteMetadata: {
     title: 'Ryan Brink',
     author: 'Ryan Brink',
