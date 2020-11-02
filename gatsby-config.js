@@ -6,7 +6,12 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-typescript`],
+  plugins: [
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-root-import`
+  ],
   siteMetadata: {
     title: 'Ryan Brink',
     author: 'Ryan Brink',
