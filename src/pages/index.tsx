@@ -3,6 +3,7 @@ import { Header } from "../header/Header" // TODO Figure out root imports
 import { NavBar } from "../navigation/NavBar"
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles"
 import CssBaseline from '@material-ui/core/CssBaseline';
+import Jobs from "../info/Jobs"
 
 // Going for https://github.com/morhetz/gruvbox#palette
 const theme = createMuiTheme({
@@ -42,6 +43,7 @@ const HomePage: FunctionComponent = () => {
       <div>
         <Header title={"Ryan Brink"} />
         <NavBar title={"Ryan Brink"} />
+        <Jobs/>
       </div>
     </ThemeProvider>
   )
