@@ -16,7 +16,7 @@ const HomePage: FunctionComponent = () => {
           height: "100vh"
         }}
       >
-       <Console />
+        <Console />
       </div>
     </ThemeProvider>
   )
