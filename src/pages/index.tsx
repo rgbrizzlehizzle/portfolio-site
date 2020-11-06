@@ -47,26 +47,20 @@ const HomePage: FunctionComponent = () => {
         }}
       >
         <Terminal
+          msg='“The purpose of a storyteller is not to tell you how to think, but to give you questions to think upon.”'
           color='#ebdbb2'
           backgroundColor='#282828'
-          barColor='black'
+          prompt='#d65d0e'
           startState='maximised'
           hideTopBar={true}
           allowTabs={false}
-          style={{ fontWeight: "bold", fontSize: "1em" }}
-          commands={
-            {
-              "open-google": () => window.open("https://www.google.com/", "_blank"),
-              showmsg: () => "Hello World",
-              popup: () => alert("Terminal in React")
-            }
-          }
-          description={{
-            "open-google": "opens google.com",
-            showmsg: "shows a message",
-            alert: "alert", popup: "alert"
+          style={{ fontWeight: "bold", fontSize: "1.1em" }}
+          commands={{ }}
+          // @ts-ignore
+          descriptions={{
+            show: 'potato',
+            color: false
           }}
-          msg='“The purpose of a storyteller is not to tell you how to think, but to give you questions to think upon.”'
         />
       </div>
     </ThemeProvider>
