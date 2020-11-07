@@ -1,11 +1,8 @@
 import React, { FunctionComponent } from "react"
 import Terminal from "terminal-in-react"
-// @ts-ignore
-import pseudoFileSystemPlugin from "terminal-in-react-pseudo-file-system-plugin"
+import { FileSystem } from "../plugins/FileSystem"
 
 export const Console: FunctionComponent = () => {
-  const FileSystemPlugin = pseudoFileSystemPlugin()
-
   return (
     <Terminal
       msg='“The purpose of a storyteller is not to tell you how to think, but to give you questions to think upon.”'
@@ -25,10 +22,8 @@ export const Console: FunctionComponent = () => {
       }}
       plugins={[
         {
-          class: FileSystemPlugin,
-          config: {
-
-          }
+          class: FileSystem,
+          config: {}
         }
       ]}
     />
